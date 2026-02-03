@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Tap 4</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        .container {
+            width: 650px;
+            margin: 20px auto;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        h3 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .row {
+            display: flex;
+            margin-bottom: 8px;
+        }
+        .row label {
+            width: 150px;
+            font-weight: bold;
+        }
+        .row input,
+        .row select,
+        .row textarea {
+            flex: 1;
+            padding: 4px;
+        }
+        textarea {
+            height: 90px;
+        }
+        .radio-group label {
+            margin-right: 15px;
+            font-weight: normal;
+        }
+        .actions {
+            text-align: right;
+            margin-top: 15px;
+        }
+        .actions button {
+            padding: 6px 12px;
+            margin-left: 5px;
+        }
+        .required {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .radio-group{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Basic Info</h3>
+        <div class="row">
+            <label>Employee ID</label>
+            <div class="input-field" style="border:none">9</div>
+        </div>
+        <div class="row">
+            <label>Last Name</label>
+            <div class="input-field" style="border:none">Dodsworth</div>
+        </div>
+        <div class="row">
+            <label>First Name</label>
+            <input type="text" value="Anne">
+        </div>
+        <div class="row">
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio">Male</label>
+                <label><input type="radio">Female</label>
+                <label><input type="radio">XXX</label>
+                <label><input type="radio" checked>ZZZ</label>
+            </div>
+        </div>
+        <div class="row">
+            <label>Title</label>
+            <input type="text" value="Sales Representative">
+        </div>
+        <div class="row">
+            <label>Suffix</label>
+            <input type="text" value="Ms.">
+        </div>
+        <div class="row">
+            <label>BirthDate</label>
+            <input type="text" value="1969-07-02 00:00:00">
+        </div>
+        <div class="row">
+            <label>HireDate</label>
+            <input type="text" value="1994-11-15 00:00:00">
+        </div>
+        <div class="row">
+            <label>SSN# (if applicable)</label>
+            <input type="text" placeholder="">
+        </div>
+        <div class="row select">
+            <label>Reports To</label>
+            <select class="input-field">
+                <option>Buchanan</option>
+            </select>
+        </div>
+        <h3>Contact Info</h3>
+        <div class="row">
+            <label>Email</label>
+            <input type="text" placeholder="name@example.com">
+        </div>
+        <div class="row">
+            <label>Address</label>
+            <input type="text" value="7 Houndstooth Rd.">
+        </div>
+        <div class="row">
+            <label>City</label>
+            <input type="text" value="London">
+        </div>
+        <div class="row">
+            <label>Region</label>
+            <input type="text" value="">
+        </div>
+        <div class="row">
+            <label>Postal Code</label>
+            <input type="text" value="WG2 7LT">
+        </div>
+        <div class="row">
+            <label>Country</label>
+            <select class="input-field">
+                <option>Russian Federation</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>US Home Phone</label>
+            <input type="text" value="(234)234-2342">
+        </div>
+        <div class="row">
+            <label>Title</label>
+            <input type="text" value="EmpID9.bmp">
+        </div>
+        <h3>Optional Info</h3>
+        <div class="row">
+            <label>Notes</label>
+            <textarea>Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ
+            </textarea>
+        </div>
+        <div class="row">
+            <label>Preferred Shift</label>
+            <label><input type="checkbox">Regular</label>
+            <label><input type="checkbox" checked>Gravy Yard</label>
+        </div>
+        <div class="row">
+            <label>Active?</label>
+            <label><input type="checkbox" checked></label>
+        </div>
+        <div class="row">
+            <label>Are you human?</label>
+            <div>
+                <div class="captcha">TIDAWO</div>
+                <input type="text" class="input-field" style="width: 250px;">
+            </div>
+        </div>
+        <div class="nev">
+            <button>&lt;</button>
+            <button>&gt;</button>
+        </div>
+        <div class="actions">
+            <button type="submit">Submit</button>
+            <button type="cancel">Cancel</button>
+        </div>
+        <div class="required">* required</div>
+    </div>
+    
+</body>
+</html>
